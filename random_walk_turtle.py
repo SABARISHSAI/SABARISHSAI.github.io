@@ -15,31 +15,16 @@ colors = [
 
 
 s = Turtle()
-s.shape("turtle")
-s.color('blue')
+s.pensize(15)
+s.speed(10000000)
 run = True
 while run:
-    moves = [1,2,3,4]
-    choice = random.choice(moves)
+    direction = [0,90,180,270]
+    choice = random.choice(direction)
     color = random.choice(colors)
     s.color(color)
-
-    if choice == 1:
-        s.right(90)
-        distance = random.randint(10,100)
-        s.forward(distance)
-    if choice == 2:
-        s.right(90)
-        distance = random.randint(10,100)
-        s.forward(distance)
-    if choice == 3:
-        s.left(90)
-        distance = random.randint(10, 100)
-        s.forward(distance)
-    if choice == 4:
-        s.left(90)
-        distance = random.randint(10,100)
-        s.forward(distance)
+    s.setheading(random.choice(direction))
+    s.forward(60)
 
 
 screen = Screen()
