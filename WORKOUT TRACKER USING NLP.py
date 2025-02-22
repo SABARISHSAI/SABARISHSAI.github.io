@@ -4,8 +4,8 @@ from datetime import datetime
 APP_ID = "3578525e"
 APP_KEY = "e3bf1f07844f2ffd904c5168ad32208a"
 NUTRITIONIX_URL = "https://trackapi.nutritionix.com/v2/natural/exercise"
-
-SHEETY_ENDPOINT = "https://api.sheety.co/aefdedd29dfb8524b28de77fdf347cb2/workouttrack/sheet1"
+path = #your own
+SHEETY_ENDPOINT = f"https://api.sheety.co/{path}/workouttrack/sheet1"
 
 now = datetime.now()
 current_date = now.strftime("%d/%m/%y")
